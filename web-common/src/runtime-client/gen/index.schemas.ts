@@ -2559,6 +2559,15 @@ export type RuntimeServiceGenerateResolverBody = {
   metricsView?: string;
 };
 
+export type RuntimeServiceGitPullBody = {
+  discardLocal?: boolean;
+};
+
+export type RuntimeServiceGitPushBody = {
+  commitMessage?: string;
+  force?: boolean;
+};
+
 export type RuntimeServiceGetLogsParams = {
   ascending?: boolean;
   limit?: number;
