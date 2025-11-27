@@ -68,7 +68,7 @@
     formType,
     onParamsUpdate: (e: any) => handleOnUpdate(e),
     onDsnUpdate: (e: any) => handleOnUpdate(e),
-    changeOlapConnector,
+    changeOlapConnector: false, // Default: Do not change OLAP connector (confirmation dialog handles explicit choice)
   });
 
   const isMultiStepConnector = formManager.isMultiStepConnector;
